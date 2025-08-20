@@ -1,0 +1,209 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{enumitem}
+\newlist{weeklist}{enumerate}{1}
+\setlist[weeklist,1]{label=Week \arabic* -, leftmargin=*}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{CS 125 Game Programming}
+\author{Melvyn Drag}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+\usepackage{multicol}
+
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize CS 125 Game Programming}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+\blankline
+
+\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+E-mail: \texttt{mdrag1@njcu.edu} \\
+
+ Office Hours: TBD  &  Class Hours: TBD \\
+
+ Office: CS Adjunct Office & Class Room: TBD \\
+ & \\
+\hline
+\end{tabular*}
+
+\vspace{5 mm}
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Course Description}
+You're going to learn to learn Python and you're going to make games! Python is an amazing programming language that is useful for programmers, business people, scientists and even hobbyists! Everyone and anyone can take away alot of great and useful information from this class. I'm excited to teach and I hope you're excited to learn! This class will take 6-12 hours a week to succeed in.
+
+\section*{About your instructor}
+My name is Melvyn Drag. You can call me "Melvyn" or "Professor" or "Professor Drag". I was born in 1988, I have a master's degree in computational science and I'm a software developer. At my day job I write code for industrial power tools used in industries like aerospace, mining, data centers, and power generation.
+
+% Second Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Class Materials}
+
+\begin{itemize}
+\item A mac, windows (not in S mode) or Linux computer.
+\item No chromebooks! 
+\item Course materials are on github \url{https://github.com/melvyniandrag/CS125-GameDevPython}
+\end{itemize}
+
+\section*{Course Structure}
+
+\subsubsection*{Lectures}
+
+Every week we'll learn new concepts and reinforce what we previously learned. Also each week we'll look at existing games that other people have made so you can get more exposure to what Python code looks like.
+
+%\begin{weeklist}
+%\item Install Python, install and use popular libraries. Show pygame. Then show how you can manipulate pdfs and excel spreadsheets and datascience.
+%\item Datatypes, operators, loops, conditionals, variables, constants.
+%\item Functions.
+%\item Classes. 
+%\item Sprites, sounds and controls. Make a cat move around the screen using keyboard, mouse, gamepad. Call the game "footprints"
+%\item Collision game. pong. Introduce Python project structure, modules, etc.
+%\item How to make sprites. Make a cat sprite with gimp, make a mouse sprite with gimp. 
+%\item Collisions. Cat and mouse game. 
+%\item Make game tiles using Tiled. Make flappy bird.
+%\item Make a platformer using everything we learned.
+%\item How to distribute your game? Use pyinstaller and upload to itch. Add this to your resume.
+%\item Online games with pygame. Learn about sockets, learn about json to serialize data. make a simple chat.
+%\item Look at battle tanks game. Introduce spot-it.
+%\item Make spot it online.
+%\end{enumerate}
+
+\begin{weeklist}
+\item Install Python and popular libraries.
+\item Datatypes, operators, loops, conditionals, variables, constants.
+\item Functions.
+\item Classes. Install Python a different way.
+\item Sprites, sounds and controls. Make character with keyboard, mouse, gamepad.
+\item Collision. Pong. Python project structure. Exam 1
+\item Make sprites with gimp. Cat and mouse.
+\item Collisions. Cat and mouse game. 
+\item PyTMX. Create flappy bird clone.
+\item Mario clone. Exam 2.
+\item Package and distribute your games on itch.io.
+\item How to make online games. We learn about sockets,json and make a simple chat application.
+\item Battle tanks online game. Introduce spot-it.
+\item Make spot it online. Exam 3.
+\end{weeklist}
+
+\subsection*{Assessments}
+
+Weekly assignments and 3 exams.
+
+From time to time I'll ask you to send selfies, videos or arrange zoom calls with me so I can verify that you're doing your work.
+
+\subsection*{Grading Policy Explanation}
+
+I grade this class in a way that takes two factors into account:
+\begin{enumerate}
+\item Life is filled with tragedy and hardship.
+\item People are monsters.
+\end{enumerate}
+
+On the one hand, life can be very challenging. It's inevitable that here will be students with everything from the common cold to ... horrific illnesses. It's inevitable that, from time to time, students will suffer the death of a loved one. It's inevitable that students will face hardships like getting a flat tire, nursing a sick child back to health, losing a job, breaking a limb, and more.
+
+That being said, it's also a fact that a disproportionate number of students can be lazy and dishonest. These students do their work at the last minute, they cheat in a variety of ways, and they'll tell any lie or do anything to try and pressure their teacher into giving an A. 
+
+How do we grade the class in such a way that allows the people in first group to succeed, without having to make exceptions for them? I've resolved that the best way to grade is to 
+\begin{center}
+    \textbf{Give Generous Deadlines}
+\end{center}
+so hard working students can start their work early and, if they get busy with something else, they'll still have time to finish. There is also the chance that you just can't find the time to do the assignment for \textit{whatever reason}. To accomodate this situation, I
+
+\begin{center}
+\textbf{Drop Some Low Grades}
+\end{center}
+
+no questions asked. I drop a certain number of low grades for everyone in the class. If you missed an assignment because you had to take your Grandmother to a medical appointment, I'm not going to try and decipher if you're lying or not. But I sincerly hope her appointment went well! You're a great grandchild!! Hand in hand with that policy goes this one: 
+\begin{center}
+\textbf{No Late Submissions}.
+\end{center}
+Not by one second. If the homework is due at 12:00 and you submit at 12:01 you get a 0. 
+
+Using the grading policy above, students  can face personal hardship and still get an A. A struggling student then doesn't need to come to me and ask for some special treatment, and I don't have to judge who's a liar and who's just having a really hard semester. Everybody wins.
+
+If your personal troubles really make it impossible for you to succeed in this class, the University has policies for you too! You can withdraw from the class, or you can negotiate ways to retake the class in the future when your life is calm enough that you can study.
+
+\subsection*{Grading Policy}
+You'll have 3 exams and approximately 14 assignments this semester.  I'll drop 1 exam and 2 homeworks. 
+
+\begin{itemize}
+	\item \underline{\textbf{20\%}} Exam A.
+	\item \underline{\textbf{20\%}} Exam B.
+	\item \underline{\textbf{60\%}} Average homework grade. 
+\end{itemize}
+
+For example, if your homework grades are {10, 10, 0, 100, 100, 100} and your exams are 100, 10 and 100, your grade will be a 100, because I will drop the two 10s and the zero you got on homework, and I'll drop your low exam too. The number grade will be mapped to the appropriate letter grade as per university guidelines.
+
+No cheating! If your uncle who works at google does your midterm, you get a 0. If the overachiever in the class does your homework for you, then you get a 0 for the assignment. Egregious cheating will be reported to the appropriate University department at my discretion.
+
+\section*{In Conclusion}
+I love programming, and you signed up to learn something interesting! I hope we have a great semester!
+
+
+
+\end{document}
