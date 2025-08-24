@@ -26,6 +26,24 @@ give instructions for windows, mac and linux users
 | **ctrl + k** | delete everything after the cursor |
 | **ctrl + l** | clear the terminal |
 
+## Terminal Commands for Python
+
+| `command` | What It Does |
+| --- | ---|
+| `python3` | Start a python3 REPL |
+| `python3 script_name.py` | Will run the script *script_name.py* from the current folder |
+| `python3 path/to/script_name.py` | Same as above, but you can specify a path to the script. | 
+| `pip3 install package_name` | Command to install a package. For example, `pip3 install pygame`. | 
+
+Note
+Depending on the way Python3 is configured on your computer you might type:
+* `py` or `py3` or `python` instead of `python3`.
+* `py -m pip3` or `py3 -m pip` or some similar command to run pip3.
+
+
+
+
+
 
 
 
