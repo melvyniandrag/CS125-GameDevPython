@@ -21,6 +21,7 @@ give instructions for windows, mac and linux users
 | `cd ..` | *go up* one folder |
 | `pwd` | Tells you which folder you're in |
 | `ls` | list the contents of your current folder |
+| `mkdir folder_name` | make a new folder called *folder_name* |
 | **tab** | Will attempt to finish what you're typing |
 | **ctrl + u** | delete everything before the cursor |
 | **ctrl + k** | delete everything after the cursor |
