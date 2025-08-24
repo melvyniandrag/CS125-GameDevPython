@@ -17,3 +17,18 @@ give instructions for windows, mac and linux users
 | --- | ---|
 | `cd` | Changes a folder. If you just type `cd` it takes you to your home directory. |
 | `cd $HOME` | Same as typing `cd` |
+| `cd folder_name` | Like you clicked the folder. Enter *folder_name* |
+| `cd ..` | *go up* one folder |
+| `pwd` | Tells you which folder you're in |
+| `ls` | list the contents of your current folder |
+| **tab** | Will attempt to finish what you're typing |
+| **ctrl + u** | delete everything before the cursor |
+| **ctrl + k** | delete everything after the cursor |
+| **ctrl + l** | clear the terminal |
+
+
+
+
+
+
+
