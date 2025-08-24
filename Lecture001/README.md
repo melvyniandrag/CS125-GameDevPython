@@ -14,5 +14,6 @@ give instructions for windows, mac and linux users
 
 ## Important Terminal Commands
 | `command` | What It Does |
+| --- | ---|
 | `cd` | Changes a folder. If you just type `cd` it takes you to your home directory. |
 | `cd $HOME` | Same as typing `cd` |
