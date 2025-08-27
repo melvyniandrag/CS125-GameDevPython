@@ -34,6 +34,7 @@ give instructions for windows, mac and linux users
 | `cd folder_name` | Like you clicked the folder. Enter *folder_name* |
 | `cd ..` | *go up* one folder |
 | `dir` | list what's in the current folder |
+| `dir \A` | list what's in the current folder, including hidden files and folders |
 | `mkdir` | make a folder |
 | `cls` | clear CMD |
 
