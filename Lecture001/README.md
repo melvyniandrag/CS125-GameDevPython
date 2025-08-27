@@ -35,6 +35,7 @@ give instructions for windows, mac and linux users
 | `cd ..` | *go up* one folder |
 | `dir` | list what's in the current folder |
 | `mkdir` | make a folder |
+| `cls` | clear CMD |
 
 ## Terminal Commands for Python
 
