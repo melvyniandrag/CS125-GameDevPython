@@ -12,7 +12,7 @@ give instructions for windows, mac and linux users
 ## Use pip to install some libraries
  pygame, matplotlib. Make sure students can import
 
-## Important Terminal Commands
+## Important Terminal Commands on macOS / Linux / Git Bash
 | `command` | What It Does |
 | --- | ---|
 | `cd` | Changes a folder. If you just type `cd` it takes you to your home directory. |
@@ -26,6 +26,17 @@ give instructions for windows, mac and linux users
 | **ctrl + u** | delete everything before the cursor |
 | **ctrl + k** | delete everything after the cursor |
 | **ctrl + l** | clear the terminal |
+
+## Important CMD commands for Windows
+| `command` | What It Does |
+| --- | ---|
+| `cd %USERPROFILE%` | Takes you to your user profile folder where you will probably have Downloads, Documents, Videos, etc. |
+| `cd folder_name` | Like you clicked the folder. Enter *folder_name* |
+| `cd ..` | *go up* one folder |
+| `dir` | list what's in the current folder |
+| `dir /A` | list what's in the current folder, including hidden files and folders |
+| `mkdir` | make a folder |
+| `cls` | clear CMD |
 
 ## Terminal Commands for Python
 
