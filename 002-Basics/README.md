@@ -53,18 +53,74 @@ There are 3 main styles people use for naming variables
 Read more [here](https://peps.python.org/pep-0008/)
 
 ## Data structures
-lists
-tuples
-sets
-dictionaries
-use type() to show the types of things
+### List
+A container of values.
+```
+>>> myList = [1, 2, 3]
+>>> type(myList)
+# output
+>>> print(myList)
+# see output
+>>> print(myList[0])
+# see output
+>>> print(myList[3])
+# error! lists are 0-indexed
+```
+
+In Python, lists can contain any data type!
+```
+>>> stuff = [1, 2.4, "hello", 5, 3.4]
+>>> print(stuff)
+# output
+>>> print(stuff[0])
+# output
+>>> print(stuff[6])
+# error
+```
+
+You can add things to lists
+```
+>>> l = []
+>>> l.append(1)
+>>> l.append("hi")
+>>> print(l)
+```
+
+See also: `insert()`
+
+You can also delete from lists. See `pop()`, `del`, `remove()` and `clear()`
+
+### Tuple
+Like a list, but **immutable**
+
+```
+>>> myTuple = (1, 2, 3)
+>>> print(myTuple)
+# see output
+>>> type(myTuple)
+# see output
+```
+
+tuples are immutable. Once you create a tuple, you cannot insert or remove new items.
+
+### Sets
+A container of values that only contains ONE instance of any value.
+
+### Dictionaries
+Like a list, but indexed by keys and not by numeric index.
+A very useful datatype.
 
 ## Loops
-for 
-while
-
+### for loops
+* loop by range
+* loop over container
+  
+### while loops
+* loop so long as a condition is true
+  
 ## Conditionals
-if
+if / else
+if/elif/else
 
 ## Remember! Python is White Space Sensitive!
 Look back at loops and conditionals and remember - Python is white space sensitive! Tabs and 4 spaces might *look* the same on your computer, but they are not the same.
