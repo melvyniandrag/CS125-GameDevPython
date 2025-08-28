@@ -119,8 +119,8 @@ A very useful datatype.
 * loop so long as a condition is true
   
 ## Conditionals
-if / else
-if/elif/else
+* if/else
+* if/elif/else
 
 ## Remember! Python is White Space Sensitive!
 Look back at loops and conditionals and remember - Python is white space sensitive! Tabs and 4 spaces might *look* the same on your computer, but they are not the same.
