@@ -45,7 +45,7 @@ Above I tell you what these operators do for numbers. You can also use + and * w
 While coding you will save your values in variables to give them meaningful names and to be able to do operations on them.
 There are 3 main styles people use for naming variables
 | Style | Example |
-| --- | | --- | 
+| --- | --- | 
 | snake case  | my_name, favorite_food, month_of_year |
 | camel case | likeThis, anAnimal, myFavorite |
 | pascal case | LikeThis, AnAnimal, MyFavorite |
