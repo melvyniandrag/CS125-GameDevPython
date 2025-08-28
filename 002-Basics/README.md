@@ -1,9 +1,9 @@
 # Python Basics Part 1
 
 ## Data types
-* string
-* int 
-* float
+* string - text
+* int - whole numbers
+* float - numbers with a decimal point
 
 # Your first functions!
 
@@ -41,7 +41,14 @@ Above I tell you what these operators do for numbers. You can also use + and * w
 # see the output
 ```
 
-## variables
+## Variables
+While coding you will save your values in variables to give them meaningful names and to be able to do operations on them.
+There are 3 main styles people use for naming variables
+| Style | Example |
+| --- | | --- | 
+| snake case  | my_name, favorite_food, month_of_year |
+| camel case | likeThis, anAnimal, myFavorite |
+| pascal case | LikeThis, AnAnimal, MyFavorite |
 
 
 
