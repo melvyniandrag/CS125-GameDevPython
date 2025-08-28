@@ -50,8 +50,7 @@ There are 3 main styles people use for naming variables
 | camel case | likeThis, anAnimal, myFavorite |
 | pascal case | LikeThis, AnAnimal, MyFavorite |
 
-
-
+Read more [here](https://peps.python.org/pep-0008/)
 
 ## Data structures
 lists
@@ -67,3 +66,7 @@ while
 ## Conditionals
 if
 
+## Remember! Python is White Space Sensitive!
+Look back at loops and conditionals and remember - Python is white space sensitive! Tabs and 4 spaces might *look* the same on your computer, but they are not the same.
+Computers use bytes to represent data.
+A tab is a byte, a space is a different byte. Even though you might look at a tab and 4 spaces and see the same thing, Python knows the difference and will complain about it.
