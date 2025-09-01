@@ -27,6 +27,18 @@ Sometimes you want to do a bunch of things, but bundle all of things you are doi
 Last week we saw one of these. print(). print() doesnt give us anything, it just does something. 
 Another function that does this is list.append()
 
+### Immutable vs mutable types.
+list, dict, set are mutable.
+```
+>>> s = set()
+>>> z = s
+>>> z.add(1)
+>>> print(s)
+```
+
+int, float, str, type are immutable. You cannot mutate them.
+
+Show what happens if you mutate a list, dict or set inside a function!
 
 ## Remember! Python is White Space Sensitive!
 Look back at loops and conditionals and remember - Python is white space sensitive! Tabs and 4 spaces might *look* the same on your computer, but they are not the same.
