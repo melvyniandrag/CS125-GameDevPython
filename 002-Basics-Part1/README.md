@@ -93,6 +93,9 @@ You can add things to lists
 >>> l.append("hi")
 >>> print(l)
 ```
+### What can list do?
+Take a look at `dir(list)`
+
 ### Python containers are zero-indexed.
 See also: `insert()`, del
 
