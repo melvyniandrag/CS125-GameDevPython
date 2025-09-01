@@ -41,6 +41,14 @@ Above I tell you what these operators do for numbers. You can also use + and * w
 # see the output
 ```
 
+## A couple more operators
+| operator | what it does |
+| --- | --- |
+| `+=` | adds in place |
+| `-=` | subtracts in place |
+| `*=` | multiplies  in place |
+| `/=` | divides in place |
+
 ## Variables
 While coding you will save your values in variables to give them meaningful names and to be able to do operations on them.
 There are 3 main styles people use for naming variables
@@ -85,10 +93,11 @@ You can add things to lists
 >>> l.append("hi")
 >>> print(l)
 ```
+### Python containers are zero-indexed.
+See also: `insert()`, del
 
-See also: `insert()`
-
-You can also delete from lists. See `pop()`, `del`, `remove()` and `clear()`
+### Other list methods
+`pop()`, `remove()`, `clear(), `reverse()` and `sort()`.
 
 ### Tuple
 Like a list, but **immutable**
@@ -109,3 +118,5 @@ A container of values that only contains ONE instance of any value.
 ### Dictionaries
 Like a list, but indexed by keys and not by numeric index.
 A very useful datatype.
+
+
